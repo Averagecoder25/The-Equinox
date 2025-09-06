@@ -48,13 +48,6 @@ p {
     animation: glitch 0.5s;
 }
 
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    filter: drop-shadow(0 0 10px #ff00ff);
-}
-
 .card h2 {
     color: #ff00ff;
     text-shadow: 0 0 5px #ff00ff;
