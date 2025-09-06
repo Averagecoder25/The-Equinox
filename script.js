@@ -1,3 +1,6 @@
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
 const firebaseConfig = {
     apiKey: "AIzaSyBwsqlKB5RM6oojwK1jA1jhKu8lvs00EuM",
     authDomain: "dnd-shop-fb62c.firebaseapp.com",
@@ -9,8 +12,11 @@ const firebaseConfig = {
     measurementId: "G-DZVY47PE4Z"
 };
 
-const app = firebase.initializeApp(firebaseConfig);
+// const app = firebase.initializeApp(firebaseConfig);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 const db = firebase.database();
+const analytics = getAnalytics(app);
 
 // Function to initialize items in DB if empty, loading from items.json
 async function initItems() {
