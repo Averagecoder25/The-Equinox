@@ -1,12 +1,13 @@
 // Replace with your Firebase config (get from Firebase console > Project Settings > Your Apps > Firebase SDK snippet)
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    databaseURL: "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
+   apiKey: "AIzaSyBwsqlKB5RM6oojwK1jA1jhKu8lvs00EuM",
+  authDomain: "dnd-shop-fb62c.firebaseapp.com",
+    databaseURL: "https://dnd-shop-fb62c-default-rtdb.firebaseio.com/",
+  projectId: "dnd-shop-fb62c",
+  storageBucket: "dnd-shop-fb62c.firebasestorage.app",
+  messagingSenderId: "377211997733",
+  appId: "1:377211997733:web:a31a04a2c4dbbcfb43b9cc",
+  measurementId: "G-DZVY47PE4Z"
 };
 
 const app = firebase.initializeApp(firebaseConfig);
