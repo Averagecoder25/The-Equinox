@@ -1,0 +1,709 @@
+{
+  "melee_weapons": [
+    {
+      "name": "Eclipse Fang",
+      "type": "Legendary Katana",
+      "damage": "3d8 slashing + 2d6 necrotic",
+      "ability": "On a hit, you may siphon 4d6 HP (heal yourself that much). 5 times per long rest, you can activate Shadow Eclipse — cloak yourself in darkness for 1 minute, gaining advantage on all attack rolls.",
+      "description": "A katana with a pitch-black blade that absorbs surrounding light, leaving only a glowing red edge.",
+      "price": 40000
+    },
+    {
+      "name": "Chronoblade",
+      "type": "Legendary Longsword",
+      "damage": "4d6 slashing + 2d6 radiant",
+      "ability": "Twice per long rest, you may 'rewind' time — reroll any attack roll, damage roll, or saving throw. Critical hits deal maximum damage. Crits on 18 to 20.",
+      "description": "Forged from temporal steel, the blade ticks with glowing gears and fractured clockwork light.",
+      "price": 65000
+    },
+    {
+      "name": "Stormrender Hammer",
+      "type": "Legendary Warhammer",
+      "damage": "2d12 bludgeoning + 2d8 lightning",
+      "ability": "Once per long rest, slam the ground to cast Chain Lightning (5 targets, 30 ft range, DC 16). Critical hits paralyze the target until end of their next turn. Crits on 19 if proficient with hammers.",
+      "description": "A brutal hammer wrapped with Tesla coils and glowing thunder-glyphs, sparking wildly with unstable current.",
+      "price": 75000
+    },
+    {
+      "name": "Infernal Fang Blades",
+      "type": "Legendary Twin Daggers",
+      "damage": "3d8 piercing each + 2d6 fire",
+      "ability": "When dual-wielded, each crit ignites target for 3d6 fire damage at start of its next turn. Crits on 19 to 20. Once per long rest, throw both daggers (returning) in a fiery arc hitting up to 3 enemies.",
+      "description": "Serrated crimson daggers with molten cores, constantly dripping sparks of ember.",
+      "price": 55000
+    },
+    {
+      "name": "Soulbreaker Axe",
+      "type": "Legendary Greataxe",
+      "damage": "2d12 slashing + 1d8 force",
+      "ability": "On crit 19 to 20, force a WIS save (DC 22) — if failed, the target is frightened for 1 minute. Once per long rest, unleash a Soul Rend dealing 4d12 psychic damage in a 20 ft cone.",
+      "description": "This axe’s blade appears ghostly translucent, with whispers of trapped souls echoing from its edge.",
+      "price": 74000
+    },
+    {
+      "name": "Solaris Spear",
+      "type": "Legendary Spear",
+      "damage": "2d8 piercing + 2d4 radiant",
+      "ability": "The spear can be thrown (range 40/80) and instantly returns. Once per long rest, unleash Solar Flare — all enemies in 20 ft must make CON save (DC 21) or be blinded for 1 minute.",
+      "description": "A golden alloy spear with a glowing plasma tip, radiating solar energy.",
+      "price": 35000
+    },
+    {
+      "name": "Aetherium Scythe",
+      "type": "Legendary Scythe",
+      "damage": "2d10 slashing + 1d4 force",
+      "ability": "When you reduce an enemy to 0 HP, gain 3d6 temporary HP twice per long rest, you may create an Aether Rift — a 15 ft radius zone of warped gravity where enemies must succeed a STR save (DC 23) or be restrained.",
+      "description": "A massive scythe forged from crystalline alloys, its blade leaving behind shimmering trails of starlight.",
+      "price": 57000
+    },
+    {
+      "name": "Voidfang Katana",
+      "type": "Katana",
+      "damage": "3d6 slashing",
+      "ability": "Three times per short rest, teleport 10 ft before striking; the attack deals +3d6 force damage.",
+      "description": "A blade forged with voidsteel, glowing purple veins ripple across its surface.",
+      "price": 32000
+    },
+    {
+      "name": "Graviton Maul",
+      "type": "Warhammer",
+      "damage": "2d8 bludgeoning + 1d4 force damage",
+      "ability": "On crit, knock target back 10 ft. Once per long rest, create a gravity well (10 ft radius) pulling enemies inward.",
+      "description": "Heavy hammer with a humming grav-core locked inside its head.",
+      "price": 19000
+    },
+    {
+      "name": "Bloodwire Blades",
+      "type": "Twin Daggers",
+      "damage": "3d8 piercing damage each",
+      "ability": "Whenever you deal damage with both daggers in a turn, gain +9 temporary HP. Twice per long rest, overcharge to deal +2d6 lightning damage.",
+      "description": "Razor-thin monofilament daggers charged with pulsing red energy.",
+      "price": 29000
+    },
+    {
+      "name": "Cryo-Edge Greatsword",
+      "type": "Greatsword",
+      "damage": "2d10 slashing + 1d4 cold damage",
+      "ability": "On crit, freeze the target’s weapon or movement until the end of its next turn.",
+      "description": "A frosted alloy sword leaving trails of frozen vapor with each swing.",
+      "price": 18000
+    },
+    {
+      "name": "Inferno Cutter",
+      "type": "Longsword",
+      "damage": "2d8 slashing + 1d4 fire",
+      "ability": "Once per short rest, unleash a fiery arc in a 15 ft cone (2d6 fire, DEX save DC 26 for half).",
+      "description": "Blackened blade with glowing orange vents along its edge.",
+      "price": 26000
+    },
+    {
+      "name": "Pulse Chainblade",
+      "type": "Chainblade",
+      "damage": "4d8 slashing",
+      "ability": "When you hit a target, you may chain the attack to another enemy within 5 ft for half damage (once per turn).",
+      "description": "Serrated vibro-sword with plasma channels that pulse with each swing.",
+      "price": 23000
+    },
+    {
+      "name": "Specter Pike",
+      "type": "Polearm",
+      "damage": "1d12 piercing",
+      "ability": "Grants +10 ft reach. 4 times per long rest jump back 25 ft (Careful enemies still may teleport).",
+      "description": "A sleek polearm with a blade of phased holographic light.",
+      "price": 22000
+    },
+    {
+      "name": "Stormlash Whip",
+      "type": "Energy Whip",
+      "damage": "2d8 slashing + 1d4 lightning",
+      "ability": "On crit, target must succeed on a CON save (DC 24) or be stunned until their next turn.",
+      "description": "Electrified whip crackling with contained lightning arcs.",
+      "price": 24050
+    },
+    {
+      "name": "Nanite Scythe",
+      "type": "Scythe",
+      "damage": "2d8 slashing +10",
+      "ability": "On hit, nanites swarm the target, reducing their AC by 4 until the end of their next turn. Once per long rest, summon a swarm for 4d6 ongoing damage per turn for 3 rounds.",
+      "description": "A wicked scythe with shifting, liquid-metal edges crawling like insects.",
+      "price": 64000
+    },
+    {
+      "name": "Nano Mech Gauntlets",
+      "type": "Gauntlets",
+      "damage": "3d10 bludgeoning + 2d4 force damage",
+      "ability": "On hit, Nanites reduce targets AC 3 and siphon 3d6 healing restored to you.",
+      "description": "A Ultra Mechanical Gauntlet set with neon nanites enveloping all targets in site.",
+      "price": 49000
+    },
+    {
+      "name": "Technic Ki Fists",
+      "type": "Fists",
+      "damage": "3d8 + 2d4 force damage",
+      "ability": "When used spend a ki point to do an extra 3d6 damage and also make target do a CON sav throw DC 23 or be stunned until their next turn.",
+      "description": "Mechanical fists of death that suck the energy from it targets life force.",
+      "price": 39000
+    },
+    {
+      "name": "Serpent Coil Gauntlets",
+      "type": "Epic Gauntlets",
+      "damage": "4d6 kinetic + 3d6 poison",
+      "ability": "Venom Strike: Once per turn, deal an additional 1d8 poison damage when you spend a ki point. Slithering Flow: +10 ft movement speed while wearing. Toxin Breath: Once per short rest, exhale a 10 ft cone of toxic fumes (3d8 poison damage, CON save of 25 for half).",
+      "description": "",
+      "price": 21000
+    },
+    {
+      "name": "Voidstep Sandals",
+      "type": "Legendary Boots / Monk Weapon Focus",
+      "damage": "Unarmed kicks deal 2d8 force damage instead of 1d4",
+      "ability": "Void Kick: Spend 1 ki to teleport up to 20 ft before or after a strike. Momentum Echo: If you miss an attack, gain advantage on your next unarmed strike. Gravity Breaker: Once per long rest, perform a jump kick that deals 3d10 force damage and knocks enemies prone in a 10 ft radius.",
+      "description": "",
+      "price": 35000
+    },
+    {
+      "name": "Iron Lotus Bracers",
+      "type": "Epic Wrist Bracers",
+      "damage": "Unarmed strikes deal 4d6 bludgeoning + 3d4 radiant",
+      "ability": "Lotus Burst: When you land 3 strikes in a turn, deal an extra 3d6 radiant damage. Stance of Balance: Gain +2 AC while you are not wearing armor or wielding a shield. Palm of Light: Spend 1 ki point to heal 3d8 + WIS modifier HP.",
+      "description": "",
+      "price": 84000
+    },
+    {
+      "name": "Thunderclap Tonfa",
+      "type": "Legendary Dual Tonfa",
+      "damage": "5d8 bludgeoning + 2d6 lightning",
+      "ability": "Thunder Strike: On a hit, spend 1 ki to deal 2d8 lightning damage and push the target 10 ft. Chain Lightning Combo: If you land both attacks in a turn, arc 2d6 lightning damage to another enemy within 10 ft. Deflective Guard: +2 to AC when wielding both tonfa.",
+      "description": "",
+      "price": 86000
+    },
+    {
+      "name": "Celestial Nerve Strikers",
+      "type": "Legendary Cyber-enhanced Fist Wraps",
+      "damage": "5d8 radiant + 3d6 lightning",
+      "ability": "Flow of Fate: Whenever you hit with an unarmed strike, roll a d20 after dealing damage to determine an additional effect: 1 - Backlash Surge (You take 5d12 lightning damage as the wraps overload), 2–5 - Static Echo (Crackling energy rattles the target, they take +5d4 lightning damage), 6–8 - Focused Pulse (Add +9d6 radiant damage to the strike), 9–11 - Flow Break (The target must succeed on a CON save (DC = 15 + Prof + WIS) or be staggered, giving them disadvantage on their next attack), 12–14 - Energy Redirect (You gain temporary hit points equal to half the damage dealt), 15–16 - Stunning Discharge (The target must succeed on a CON save (DC=25) or be stunned until the end of your next turn), 17–18 - Overclocked Strikes (Until the end of your next turn, all unarmed attacks deal +2d8 lightning damage), 19 - Healing Flow (You or an ally within 10 ft regains hit points equal to the damage dealt), 20 - Celestial Storm (A burst of radiant and lightning energy explodes in a 10 ft radius around the target, dealing 6d10 radiant + 7d10 lightning damage (Dex save of 34 for half)). Counts as magical monk weapons. Grants +6 to AC while unarmored. While attuned, you have advantage on Acrobatics and Insight checks.",
+      "description": "",
+      "price": 294000
+    }
+  ],
+  "helmets": [
+    {
+      "name": "Neural Overclocker",
+      "armor": "+3 AC",
+      "ability": "Twice per long rest, cast Haste on yourself.",
+      "description": "Sleek chrome visor that accelerates neural signals beyond human limits.",
+      "price": 41000
+    },
+    {
+      "name": "Eclipse Mask",
+      "armor": "+2 AC",
+      "ability": "Gain Darkvision 120 ft and immunity to being blinded.",
+      "description": "A black mask with glowing red runes, obscuring your face entirely.",
+      "price": 27000
+    },
+    {
+      "name": "Mindlink Crown",
+      "armor": "+2 AC",
+      "ability": "Telepathically communicate with any creature within 60 ft. Once per long rest, cast Dominate Person (DC 24).",
+      "description": "A crown of silver circuitry with faint pulses of psychic light.",
+      "price": 27500
+    },
+    {
+      "name": "Titan Helm",
+      "armor": "+3 AC",
+      "ability": "Resistance to psychic and thunder damage and cast healing ward.",
+      "description": "Reinforced alloy helmet with a growling voice modulator.",
+      "price": 32000
+    },
+    {
+      "name": "Specter Visor",
+      "armor": "+2 AC",
+      "ability": "While wearing, you are invisible to cameras and surveillance systems. Once per short rest, turn invisible for 1 round and gain advantage on stealth attacks.",
+      "description": "Smooth black visor that seems to bend light around it.",
+      "price": 35000
+    },
+    {
+      "name": "Solaris Crown",
+      "armor": "+3 AC",
+      "ability": "Immune to radiant damage, and once per long rest, cast Sunbeam must pass a DC 24 saving throw.",
+      "description": "A crystalline crown glowing like a miniature sun.",
+      "price": 39000
+    },
+    {
+      "name": "Wraith Hood",
+      "armor": "+2 AC",
+      "ability": "Advantage on Stealth checks, resistance to necrotic damage.",
+      "description": "A hood stitched with cybernetic fibers, shadows cling unnaturally to it.",
+      "price": 19000
+    },
+    {
+      "name": "Neon Spectacles",
+      "armor": "+1 AC",
+      "ability": "Gain Darkvision 60 ft. Once per short rest, see invisible creatures for 1 minute.",
+      "description": "Sleek cyber goggles glowing with neon data streams.",
+      "price": 19000
+    },
+    {
+      "name": "Steeljaw Mask",
+      "armor": "+2 AC",
+      "ability": "Once per long rest, release a battle cry that grants allies within 15 ft advantage on their next attack.",
+      "description": "A heavy iron jawplate mask with vox-grilles that amplify your voice.",
+      "price": 27000
+    },
+    {
+      "name": "Echo Visor",
+      "armor": "+1 AC",
+      "ability": "Advantage on Perception checks relying on sound. Once per short rest, emit a sonic pulse (15 ft cone, DC 24 CON save, deafened for 1 minute).",
+      "description": "Futuristic headset with glowing audio sensors.",
+      "price": 17000
+    },
+    {
+      "name": "Cyber Halo",
+      "armor": "+2 AC",
+      "ability": "Twice per long rest, emit a radiant burst (3d6 radiant, 10 ft radius, DC 14). Allies inside regain 3d6 HP.",
+      "description": "A floating ring of pure light orbiting the user’s head.",
+      "price": 31000
+    },
+    {
+      "name": "Hunter’s HUD",
+      "armor": "+1 AC",
+      "ability": "Advantage on ranged attack rolls once per short rest.",
+      "description": "Tactical eyepiece that highlights targets in glowing reticles.",
+      "price": 14000
+    },
+    {
+      "name": "Glitch Hood",
+      "armor": "+2 AC",
+      "ability": "Three times per long rest, teleport 15 ft to an unoccupied space you can see.",
+      "description": "Hood with holographic threads that flicker like a broken signal.",
+      "price": 22000
+    }
+  ],
+  "chestplates": [
+    {
+      "name": "Dragonforge Exosuit",
+      "armor": "+4 AC",
+      "ability": "Once per long rest, breathe a 30 ft cone of fire (8d6, DC 26 DEX).",
+      "description": "Plated cybernetic armor glowing with molten vents.",
+      "price": 89000
+    },
+    {
+      "name": "Void Carapace",
+      "armor": "+2 AC",
+      "ability": "Advantage on saving throws vs. magic. Once per short rest, phase through a wall up to 10 ft thick.",
+      "description": "Shadow-infused armor pulsing with void energy.",
+      "price": 42000
+    },
+    {
+      "name": "Aegis of Eternity",
+      "armor": "+3 AC",
+      "ability": "Twice per long rest, negate all damage from a single attack.",
+      "description": "A radiant, glowing chestplate marked with shifting glyphs.",
+      "price": 73500
+    },
+    {
+      "name": "Stormbreaker Harness",
+      "armor": "+2 AC",
+      "ability": "Resistance to lightning and thunder damage. Twice per long rest, unleash a thunderclap (2d8 thunder, 15 ft radius, DC 24).",
+      "description": "Power armor lined with Tesla nodes sparking violently.",
+      "price": 31000
+    },
+    {
+      "name": "Cryo-Engine Armor",
+      "armor": "+2 AC",
+      "ability": "Resistance to cold. Once per long rest, freeze enemies in a 15 ft cone (3d8 cold, DC 25 CON, half on success).",
+      "description": "Chestplate constantly venting frost vapors.",
+      "price": 34000
+    },
+    {
+      "name": "Bio-Regen Coreplate",
+      "armor": "+2 AC",
+      "ability": "Regain 2d8 HP at the start of each of your turns if below half HP.",
+      "description": "Nanite-infused armor that knits wounds closed mid-combat.",
+      "price": 54000
+    },
+    {
+      "name": "Starlight Plating",
+      "armor": "+5 AC",
+      "ability": "Resistant to necrotic. Once per long rest, explode with a starlight nova (16d12 radiant, 20 ft radius). You take 85 percent of the damage guaranteed, no questions asked and no possible way to negate this damage not even with wish. In other words you become the living nuke.",
+      "description": "Gleaming armor etched with fragments of falling stars.",
+      "price": 196000
+    },
+    {
+      "name": "Neon Riot Gear",
+      "armor": "+2 AC",
+      "ability": "Advantage on STR saving throws.",
+      "description": "A heavy-duty suit glowing with neon graffiti-like energy veins.",
+      "price": 19000
+    },
+    {
+      "name": "Pulseguard Armor",
+      "armor": "+2 AC",
+      "ability": "Three times per long rest, project a force shield granting +3 AC to allies within 10 ft for 1 minute.",
+      "description": "Sleek body armor that emits waves of blue energy.",
+      "price": 34000
+    },
+    {
+      "name": "Ghostplate Harness",
+      "armor": "+2 AC",
+      "ability": "Once per short rest, gain Invisibility for 1 round after being hit.",
+      "description": "A light armor that flickers like a hologram under stress.",
+      "price": 18000
+    },
+    {
+      "name": "Shockcoil Armor",
+      "armor": "+2 AC",
+      "ability": "Attackers take 1d4 lightning damage when hitting you with melee.",
+      "description": "Plated armor with embedded capacitors buzzing faintly.",
+      "price": 17000
+    },
+    {
+      "name": "Graviton Vest",
+      "armor": "+2 AC",
+      "ability": "Once per long rest, activate a 15 ft gravity well that reduces movement speed by half for enemies inside.",
+      "description": "Compact suit with a glowing grav-core in the chest.",
+      "price": 18500
+    },
+    {
+      "name": "Thermal Alloy Suit",
+      "armor": "+2 AC",
+      "ability": "Resistance to fire damage.",
+      "description": "Armor forged from heat-resistant alloy with glowing red joints.",
+      "price": 14000
+    },
+    {
+      "name": "Nanoweave Breastplate",
+      "armor": "+2 AC",
+      "ability": "Once per short rest, reduce incoming damage by half.",
+      "description": "Armor woven from swarming nanite strands that harden on impact.",
+      "price": 14000
+    }
+  ],
+  "boots": [
+    {
+      "name": "Phase Striders",
+      "armor": "+2 AC",
+      "ability": "Once per short rest, boost your damage by 2d8 damage.",
+      "description": "Cybernetic boots that distort reality as you step.",
+      "price": 21000
+    },
+    {
+      "name": "Chrono-Treads",
+      "armor": "+1 AC",
+      "ability": "Once per long rest, take an extra action (like haste) for 1 round.",
+      "description": "Time-synced boots with glowing clockwork gears.",
+      "price": 25000
+    },
+    {
+      "name": "Voidwalkers",
+      "armor": "+2 AC",
+      "ability": "Permanent advantage on Stealth checks. Once per short rest, teleport 30 ft to a space you can see.",
+      "description": "Shadow-slick boots that leave trails of void energy.",
+      "price": 39000
+    },
+    {
+      "name": "Inferno Greaves",
+      "armor": "+1 AC",
+      "ability": "Walking leaves behind fire for 5 ft (1d6 fire damage to enemies crossing). Resistance to fire damage.",
+      "description": "Heavy armored greaves with molten cores and jet-vents.",
+      "price": 10000
+    },
+    {
+      "name": "Thunderstep Boots",
+      "armor": "+2 AC",
+      "ability": "Once per long rest, teleport up to 60 ft in a flash of lightning (enemies within 10 ft take 2d8 lightning, DC 24 DEX save).",
+      "description": "Sleek boots charged with plasma coils.",
+      "price": 29500
+    },
+    {
+      "name": "Jet-Kickers",
+      "armor": "+1 AC",
+      "ability": "Once per long rest, dash an extra 30 ft using rocket propulsion.",
+      "description": "Cyberpunk sneakers with mini-thrusters.",
+      "price": 42000
+    },
+    {
+      "name": "Silent Steps",
+      "armor": "+1 AC",
+      "ability": "Gain proficiency in Stealth or advantage on existing Stealth rolls.",
+      "description": "Boots padded with nano-fibers that absorb sound.",
+      "price": 21000
+    },
+    {
+      "name": "Stormrunners",
+      "armor": "+1 AC",
+      "ability": "Movement speed +15 ft. If you are the player with the highest speed running up and on surfaces is possible.",
+      "description": "Shoes laced with arcs of electric-blue energy.",
+      "price": 87000
+    },
+    {
+      "name": "Ironclad Marchers",
+      "armor": "+2 AC",
+      "ability": "Advantage on saving throws against being knocked prone. Once per short rest, stomp to create a shockwave (push enemies 10 ft, DC 20 STR save).",
+      "description": "Heavy industrial boots reinforced with steel plates.",
+      "price": 31000
+    },
+    {
+      "name": "Holo-Steppers",
+      "armor": "+1 AC",
+      "ability": "Once per long rest, create 2 illusory duplicates of yourself (like mirror image but weaker—1 hit each). You move and attack with them with exact abilities, damage, and gear.",
+      "description": "Neon boots that project shifting holograms.",
+      "price": 156000
+    }
+  ],
+  "guns": [
+    {
+      "name": "Solaris Cannon",
+      "type": "Legendary Heavy Plasma Rifle",
+      "damage": "3d10 radiant + fire",
+      "ability": "Once per long rest, unleash a solar flare (30 ft cone, 6d10 radiant + fire, DC 29 DEX save for half).",
+      "description": "A glowing cannon that channels the sun itself into burning plasma shots.",
+      "price": 112000
+    },
+    {
+      "name": "Erebus Handcannon",
+      "type": "Legendary Revolver",
+      "damage": "2d12 necrotic",
+      "ability": "Critical hits siphon 3d8 HP back to the wielder.",
+      "description": "A massive revolver forged with voidsteel, glowing with purple runes.",
+      "price": 24000
+    },
+    {
+      "name": "Aetherstorm Railgun",
+      "type": "Legendary Sniper",
+      "damage": "3d8 piercing + lightning",
+      "ability": "Twice per long rest, fire a charged shot that hits through 2 enemies in a line.",
+      "description": "Long, sleek, glowing coils charged with lightning plasma.",
+      "price": 24000
+    },
+    {
+      "name": "Infernum SMG",
+      "type": "Legendary Rapid-Fire Blaster",
+      "damage": "5d6 fire per shot (burst fire = 3 targets within 10 ft)",
+      "ability": "Once per short rest, ignite enemies hit (4d6 fire damage ongoing, DC 27 CON save ends).",
+      "description": "A sleek submachine gun venting flames with every round.",
+      "price": 74000
+    },
+    {
+      "name": "Cryo-Lasher",
+      "type": "Legendary Shotgun",
+      "damage": "4d8 cold damage in a 15 ft cone",
+      "ability": "On a failed DC 23 CON save, enemies are slowed (movement halved) for 1 round.",
+      "description": "A shotgun with glowing ice coils that blasts frigid air.",
+      "price": 25000
+    },
+    {
+      "name": "Pandora’s Spitter",
+      "type": "Legendary Exotic Launcher",
+      "damage": "3d10 force + 1 random effect (roll a d6: fire, lightning, acid, psychic, necrotic, radiant)",
+      "ability": "Three times per long rest, overload shot deals 5d12 force damage in a 20 ft radius (DC 28 DEX save half).",
+      "description": "An alien hybrid weapon that spits unpredictable projectiles.",
+      "price": 105000
+    },
+    {
+      "name": "Neon Fang",
+      "type": "Epic Pistol",
+      "damage": "2d8 radiant",
+      "ability": "Glows in the dark, grants +2 to intimidation checks.",
+      "description": "A chromed-out pistol with neon etching.",
+      "price": 19000
+    },
+    {
+      "name": "Stormpiercer",
+      "type": "Epic Assault Rifle",
+      "damage": "2d10 lightning",
+      "ability": "Once per short rest, fire a charged shot that chains to a second enemy (1d8 lightning).",
+      "description": "A rapid rifle powered by electric coils.",
+      "price": 9000
+    },
+    {
+      "name": "Emberburst Carbine",
+      "type": "Epic Rifle",
+      "damage": "2d8 fire",
+      "ability": "On a natural 20, enemies ignite (10d6 fire ongoing).",
+      "description": "Sleek gun with a glowing red core.",
+      "price": 89000
+    },
+    {
+      "name": "Specter Coilgun",
+      "type": "Epic Sniper",
+      "damage": "4d10 piercing",
+      "ability": "Advantage on attack rolls if you haven’t moved this turn. If you haven't moved and roll a crit you deal a killing blow to enemies or if its a boss with legendary resistances and they are 75% dead they are killed instantly. Maybe useful to take out required targets with massive amounts of health.",
+      "description": "A silent sniper powered by magnetized coils.",
+      "price": 96000
+    },
+    {
+      "name": "Shatterbolt SMG",
+      "type": "Epic Submachine Gun",
+      "damage": "2d6 force",
+      "ability": "Once per short rest, burst-fire shrapnel forces enemies to make DC 25 STR save or be knocked prone.",
+      "description": "Compact weapon that rattles with force blasts.",
+      "price": 12000
+    },
+    {
+      "name": "Pulse Scattergun",
+      "type": "Epic Shotgun",
+      "damage": "2d8 thunder damage in a 10 ft cone",
+      "ability": "On hit, push enemies 5 ft back.",
+      "description": "Short-barrel shotgun that fires concussive energy pulses.",
+      "price": 9000
+    },
+    {
+      "name": "Venom Spitter",
+      "type": "Epic Exotic Gun",
+      "damage": "2d6 poison",
+      "ability": "On hit, target makes DC 22 CON save or is poisoned for 1 round.",
+      "description": "A biomechanical gun that spits acidic venom.",
+      "price": 14000
+    }
+  ],
+  "useable_items": [
+    {
+      "name": "Neuroflare Grenade",
+      "effect": "Explodes in a 20 ft radius, forcing all creatures to make a DC 26 INT save or be stunned for 1 minute.",
+      "flavor": "Emits psychic static that fries enemy brains.",
+      "price": 13000
+    },
+    {
+      "name": "Phoenix Injector",
+      "effect": "When injected upon death, instantly revive with half HP.",
+      "flavor": "A glowing crimson nanite syringe that rebuilds flesh.",
+      "price": 19000
+    },
+    {
+      "name": "Chrono Shard",
+      "effect": "Break the shard to rewind time by 1 full round for the entire party (everyone reverts to their positions, HP, and status). One use only.",
+      "flavor": "A crystal humming with unstable time-energy.",
+      "price": 24000
+    },
+    {
+      "name": "Blackout Beacon",
+      "effect": "Creates a 60 ft radius EMP for 1 minute. All electronics, cybernetic weapons, and energy fields are disabled.",
+      "flavor": "A pulsating orb that detonates with anti-tech shockwaves.",
+      "price": 10000
+    },
+    {
+      "name": "Eclipse Disk",
+      "effect": "Once thrown, creates magical darkness (60 ft radius) and silence (no sound passes through) for 1 minute.",
+      "flavor": "A sleek black disc that expands into a dome of void energy.",
+      "price": 6000
+    },
+    {
+      "name": "Cryo Capsule",
+      "effect": "Explodes in a 20 ft radius, dealing 4d6 cold damage and freezing the ground (difficult terrain for 2 rounds).",
+      "flavor": "Vial of liquid frost encased in glass.",
+      "price": 8000
+    },
+    {
+      "name": "Pulse Mine",
+      "effect": "Place on the ground. First enemy to step on it takes 3d8 thunder damage and is knocked prone.",
+      "flavor": "A small disc that hums with unstable sonic energy.",
+      "price": 6000
+    },
+    {
+      "name": "Adrenal Surge Patch",
+      "effect": "Apply to self for +2 to attack rolls and +10 ft movement for 1 minute.",
+      "flavor": "A neon-blue nanogel patch that burns into the skin.",
+      "price": null
+    },
+    {
+      "name": "Specter Smoke",
+      "effect": "Creates a 30 ft smoke cloud. Inside, the user becomes invisible until they attack or cast a spell.",
+      "flavor": "A capsule of shifting holographic mist.",
+      "price": 7000
+    },
+    {
+      "name": "Overload Chip",
+      "effect": "Insert into a cybernetic weapon or armor to double its damage or AC bonus for 1 turn. Only 3 may be used until a long rest.",
+      "flavor": "A glowing golden circuit the size of a coin.",
+      "price": 13000
+    },
+    {
+      "name": "Crit Overloader",
+      "effect": "Reduces Crit requirement by a d4 (cannot be stacked). Only 3 can be used per long rest.",
+      "flavor": "Injection Chip filled with red fluid that envelops the bodies armor.",
+      "price": 19000
+    }
+  ],
+  "exotic_weapons": [
+    {
+      "name": "The Ouroblade",
+      "type": "Exotic Katana",
+      "damage": "8d8 slashing + 4d8 psychic",
+      "ability": "On crit, rewind your last attack and strike again.",
+      "quest": "Found in the ruins of an AI-controlled city where time itself loops endlessly. Players must escape a collapsing time-loop dungeon.",
+      "price": 213000
+    },
+    {
+      "name": "Eclipse Cannon",
+      "type": "Heavy Energy Launcher",
+      "damage": "6d12 radiant + necrotic in a 30 ft radius (3 times per long rest)",
+      "ability": "Fires a miniature 'black sun' that consumes light.",
+      "quest": "Only appears during a solar eclipse; players must defeat a cult that’s using the eclipse to summon an ancient war-machine.",
+      "price": 210000
+    },
+    {
+      "name": "Nyx’s Whisper",
+      "type": "Silenced Pistol",
+      "damage": "3d12 necrotic, crits on 19–20",
+      "ability": "If a crit gun steals an ability from target (3 times per long rest).",
+      "quest": "Carried by a legendary assassin AI; players must infiltrate its datavault to steal the gun’s code.",
+      "price": 235000
+    },
+    {
+      "name": "Helios Edge",
+      "type": "Cyber Greatsword",
+      "damage": "6d8 fire + radiant",
+      "ability": "Once per long rest, transform into a 'solar avatar' for 1 minute (attacks glow like the sun).",
+      "quest": "Buried in the heart of a starship’s reactor core. Players must stabilize the core while fighting void-creatures.",
+      "price": 899999
+    },
+    {
+      "name": "Leviathan Maw",
+      "type": "Exotic Shotgun",
+      "damage": "5d10 piercing + thunder in a 20 ft cone",
+      "ability": "On kill, devour the target’s life force (heal 7d8 HP or heal a companion).",
+      "quest": "Hidden inside a drowned megacity, guarded by a cyber-leviathan boss.",
+      "price": 198000
+    },
+    {
+      "name": "The Wyrmspike",
+      "type": "Plasma Spear",
+      "damage": "5d8 piercing + 7d6 lightning",
+      "ability": "Can be thrown as a bolt of plasma when target is hit 3 times on players turn the entire party gains increased stats and abilities (Consult DM).",
+      "quest": "Stolen by a dragon-augmented warlord who rules an orbital station. Players must storm the fortress.",
+      "price": 195000
+    },
+    {
+      "name": "Harbinger’s Requiem",
+      "type": "Rail Sniper",
+      "damage": "6d8 force and 5d6 force damage",
+      "ability": "On crit, deals double damage and forces a fear check (DC 26 WIS).",
+      "quest": "Locked in a war museum. The AI curator demands players prove themselves by defeating holographic replicas of history’s greatest mercenaries.",
+      "price": 210000
+    },
+    {
+      "name": "Chimera Lash",
+      "type": "Living Whip",
+      "damage": "12d10 slashing + 1d4 random damage type (fire, poison, lightning, psychic) each attack",
+      "ability": "Once per long rest summon 4 Chimera Beasts when damage is done.",
+      "quest": "Crafted from cybernetic beasts; players must hunt all four 'Chimera Beasts' across the wastelands to assemble it.",
+      "price": 456000
+    },
+    {
+      "name": "Oblivion Core",
+      "type": "Hand-Cannon",
+      "damage": "10d12 necrotic",
+      "ability": "Each kill charges the gun; after 3 charges, fire a 'planet-cracker' blast (8d12 necrotic + force in a 60 ft line and creates a Darkhole that steals valuable information from the enemy leading to riches and untold fortunes.",
+      "quest": "Buried in the center of a black hole simulation run by a rogue AI.",
+      "price": 326000
+    },
+    {
+      "name": "The Equinox Blade",
+      "type": "Twin-Mode Exotic Sword",
+      "damage": "7d20 radiant (day mode) OR 7d20 necrotic (night mode)",
+      "ability": "3 times per long rest, unleash 'Balance Breaker' — a dual strike that deals both radiant + necrotic damage to all enemies in a 50 ft radius. Also once used 3 times unleash Equinox Slice which reduces any creature's health to 1 including ignoring DMs ability to counter or negate said attack.",
+      "quest": "Hidden inside the store itself. To unlock, players must complete all other quests from The Equinox.",
+      "price": 999999
+    }
+  ]
+}
