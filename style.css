@@ -1,0 +1,99 @@
+body {
+    background-color: #0a0a0a;
+    color: #00ffcc;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ff00ff, #00ffff);
+    color: #000;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: glitch 1s infinite;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #ff00ff, 0 0 50px #00ffff;
+    animation: glitch 0.5s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 10px #ff00ff);
+}
+
+.card h2 {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff;
+}
+
+.card p {
+    color: #00ffff;
+}
+
+.button {
+    background: #ff00ff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #00ffff;
+}
+
+.out-of-stock {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.out-of-stock .button {
+    background: #333;
+    cursor: not-allowed;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
