@@ -1,13 +1,12 @@
-// Replace with your Firebase config (get from Firebase console > Project Settings > Your Apps > Firebase SDK snippet)
 const firebaseConfig = {
-   apiKey: "AIzaSyBwsqlKB5RM6oojwK1jA1jhKu8lvs00EuM",
-  authDomain: "dnd-shop-fb62c.firebaseapp.com",
+    apiKey: "AIzaSyBwsqlKB5RM6oojwK1jA1jhKu8lvs00EuM",
+    authDomain: "dnd-shop-fb62c.firebaseapp.com",
     databaseURL: "https://dnd-shop-fb62c-default-rtdb.firebaseio.com/",
-  projectId: "dnd-shop-fb62c",
-  storageBucket: "dnd-shop-fb62c.firebasestorage.app",
-  messagingSenderId: "377211997733",
-  appId: "1:377211997733:web:a31a04a2c4dbbcfb43b9cc",
-  measurementId: "G-DZVY47PE4Z"
+    projectId: "dnd-shop-fb62c",
+    storageBucket: "dnd-shop-fb62c.firebasestorage.app",
+    messagingSenderId: "377211997733",
+    appId: "1:377211997733:web:a31a04a2c4dbbcfb43b9cc",
+    measurementId: "G-DZVY47PE4Z"
 };
 
 const app = firebase.initializeApp(firebaseConfig);
@@ -18,34 +17,41 @@ async function initItems() {
     const itemsRef = db.ref('items');
     const snapshot = await itemsRef.once('value');
     if (!snapshot.exists()) {
-        const response = await fetch('items.json');
-        const data = await response.json();
-        let allItems = [];
-        Object.keys(data).forEach(category => {
-            data[category].forEach(item => {
-                const id = item.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-                let desc = '';
-                if (item.type) desc += `Type: ${item.type}. `;
-                if (item.damage) desc += `Damage: ${item.damage}. `;
-                if (item.armor) desc += `Armor: ${item.armor}. `;
-                if (item.ability) desc += `Ability: ${item.ability}. `;
-                if (item.effect) desc += `Effect: ${item.effect}. `;
-                if (item.description || item.flavor) desc += `${item.description || item.flavor} `;
-                if (item.quest) desc += `Quest: ${item.quest}. `;
-                if (item.price != null) desc += `Price: ${item.price}`;
-                const newItem = {
-                    id,
-                    name: item.name,
-                    desc: desc.trim(),
-                    image: `https://placehold.co/400x300/0a0a0a/ff00ff?text=${encodeURIComponent(item.name)}`,
-                    stock: 1
-                };
-                allItems.push(newItem);
+        try {
+            const response = await fetch('items.json');
+            if (!response.ok) throw new Error('Failed to fetch items.json');
+            const data = await response.json();
+            let allItems = [];
+            Object.keys(data).forEach(category => {
+                data[category].forEach(item => {
+                    const id = item.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+                    let desc = '';
+                    if (item.type) desc += `Type: ${item.type}. `;
+                    if (item.damage) desc += `Damage: ${item.damage}. `;
+                    if (item.armor) desc += `Armor: ${item.armor}. `;
+                    if (item.ability) desc += `Ability: ${item.ability}. `;
+                    if (item.effect) desc += `Effect: ${item.effect}. `;
+                    if (item.description || item.flavor) desc += `${item.description || item.flavor} `;
+                    if (item.quest) desc += `Quest: ${item.quest}. `;
+                    if (item.price != null) desc += `Price: ${item.price}`;
+                    else desc += `Price: Contact DM`;
+                    const newItem = {
+                        id,
+                        name: item.name,
+                        desc: desc.trim(),
+                        image: `images/${id}.jpg`,
+                        stock: 1
+                    };
+                    allItems.push(newItem);
+                });
             });
-        });
-        allItems.forEach(item => {
-            itemsRef.child(item.id).set(item);
-        });
+            allItems.forEach(item => {
+                itemsRef.child(item.id).set(item);
+            });
+        } catch (error) {
+            console.error('Error initializing items:', error);
+            alert('Failed to load shop items. Please try again later.');
+        }
     }
 }
 
@@ -63,20 +69,24 @@ function loadItems() {
             card.classList.add('card');
             if (item.stock === 0) card.classList.add('out-of-stock');
             card.innerHTML = `
-                <img src="${item.image}" alt="${item.name}">
+                <img src="${item.image}" alt="${item.name}" onerror="this.src='images/fallback.jpg'">
                 <h2>${item.name}</h2>
                 <p>${item.desc}</p>
                 <button class="button" onclick="buyItem('${item.id}')">${item.stock > 0 ? 'Acquire' : 'Out of Stock'}</button>
             `;
             container.appendChild(card);
         });
+    }, error => {
+        console.error('Error loading items:', error);
+        alert('Failed to load items. Please refresh.');
     });
 }
 
 // Buy item (set stock to 0)
 function buyItem(id) {
-    db.ref(`items/${id}/stock`).set(0);
-    alert('Item acquired! Check with your DM.');
+    db.ref(`items/${id}/stock`).set(0)
+        .then(() => alert('Item acquired! Check with your DM.'))
+        .catch(error => alert('Purchase failed: ' + error.message));
 }
 
 // Load items for DM panel
@@ -90,7 +100,7 @@ function loadDMItems() {
             const card = document.createElement('div');
             card.classList.add('card');
             card.innerHTML = `
-                <img src="${item.image}" alt="${item.name}">
+                <img src="${item.image}" alt="${item.name}" onerror="this.src='images/fallback.jpg'">
                 <h2>${item.name}</h2>
                 <p>${item.desc}</p>
                 <p>Stock: ${item.stock}</p>
@@ -98,13 +108,17 @@ function loadDMItems() {
             `;
             container.appendChild(card);
         });
+    }, error => {
+        console.error('Error loading DM items:', error);
+        alert('Failed to load DM items. Please refresh.');
     });
 }
 
 // Restock item (set stock to 1)
 function restockItem(id) {
-    db.ref(`items/${id}/stock`).set(1);
-    alert('Item restocked!');
+    db.ref(`items/${id}/stock`).set(1)
+        .then(() => alert('Item restocked!'))
+        .catch(error => alert('Restock failed: ' + error.message));
 }
 
 // Load based on page
