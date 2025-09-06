@@ -39,7 +39,6 @@ async function initItems() {
                         id,
                         name: item.name,
                         desc: desc.trim(),
-                        image: `images/${id}.jpg`,
                         stock: 1
                     };
                     allItems.push(newItem);
@@ -69,7 +68,6 @@ function loadItems() {
             card.classList.add('card');
             if (item.stock === 0) card.classList.add('out-of-stock');
             card.innerHTML = `
-                <img src="${item.image}" alt="${item.name}" onerror="this.src='images/fallback.jpg'">
                 <h2>${item.name}</h2>
                 <p>${item.desc}</p>
                 <button class="button" onclick="buyItem('${item.id}')">${item.stock > 0 ? 'Acquire' : 'Out of Stock'}</button>
@@ -100,7 +98,6 @@ function loadDMItems() {
             const card = document.createElement('div');
             card.classList.add('card');
             card.innerHTML = `
-                <img src="${item.image}" alt="${item.name}" onerror="this.src='images/fallback.jpg'">
                 <h2>${item.name}</h2>
                 <p>${item.desc}</p>
                 <p>Stock: ${item.stock}</p>
