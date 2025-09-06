@@ -1,7 +1,7 @@
 const firebaseConfig = {
     apiKey: "AIzaSyBwsqlKB5RM6oojwK1jA1jhKu8lvs00EuM",
     authDomain: "dnd-shop-fb62c.firebaseapp.com",
-    databaseURL: "https://dnd-shop-fb62c-default-rtdb.firebaseio.com/",
+    databaseURL: "https://dnd-shop-fb62c-default-rtdb.firebaseio.com",
     projectId: "dnd-shop-fb62c",
     storageBucket: "dnd-shop-fb62c.firebasestorage.app",
     messagingSenderId: "377211997733",
