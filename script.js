@@ -80,6 +80,7 @@ function buyItem(id) {
 
 // Load items for DM panel
 function loadDMItems() {
+    console.log("inside loaddmitems func");
     const container = document.getElementById('dm-items-container');
     if (!container) return;
     container.innerHTML = '';
