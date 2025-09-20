@@ -1,3 +1,162 @@
+aincient
+aincient
+Invisible
+
+aincient — 6/29/2025 10:40 AM
+https://discord.gg/retrodiffusion
+Retro Diffusion
+Retro Diffusion
+1,343 Online
+4,562 Members
+Est. Feb 2022
+A friendly community of Pixel Art and AI enthusiasts.
+👾
+Pixel art
+🤖
+AI
+🎮
+Games
+
+Go to Server
+aincient
+ started a call that lasted a minute. — 7/10/2025 3:04 PM
+Raúl-RBJ7 — 7/10/2025 3:05 PM
+I hear you
+but it's cuz im im a call on WhatsApp
+so maybe that's why you can't hear me
+aincient — 7/10/2025 3:05 PM
+Oh ok well I was saying on Saturday we going to Angelica’s house for a birthday party
+Raúl-RBJ7 — 7/10/2025 3:05 PM
+oh gotcha
+well yeah sunday
+but what time
+aincient — 7/10/2025 3:06 PM
+Afternoon
+Raúl-RBJ7 — 7/10/2025 3:06 PM
+like 6?
+aincient — 7/10/2025 3:12 PM
+Maybe earlier if you can or I could Monday afternoon too
+I was thinking like 3 or 4
+Raúl-RBJ7 — 7/10/2025 3:20 PM
+well around 3-4 is when we eat so more like 5 for me bro
+aincient — 7/10/2025 3:20 PM
+Yea sure
+Raúl-RBJ7 — 7/10/2025 3:20 PM
+oh waittt
+lol I forgot
+I got MET
+aincient — 7/10/2025 3:20 PM
+Oh shit never mind than
+Maybe we can do it Monday afternoon
+Raúl-RBJ7 — 7/10/2025 3:21 PM
+oh yeah we could do that
+aincient
+ started a call that lasted 6 minutes. — 7/23/2025 4:09 PM
+aincient — 8/8/2025 6:13 PM
+https://steam-revenue-calculator.com/app/2617700/tinkerlands
+Tinkerlands
+Image
+this game made 181000 in 4 months
+aincient — 8/8/2025 6:58 PM
+https://store.steampowered.com/app/2378620/Anomaly_Agent/
+Steam
+Anomaly Agent
+Become Agent 70 and stop the anomalies threatening to destroy the balance of the world!
+
+Use extraordinary anomaly weapons to toss your opponents around! Overcome your enemies using melee techniques or deadly firearms!
+…
+Price
+$3.59
+Recommendations
+8216
+Metacritic
+84
+3 million in 10 months 
+Raúl-RBJ7 — 8/8/2025 7:40 PM
+damn that's crazy
+Raúl-RBJ7 — 9/7/2025 1:50 PM
+fixed it bro
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Panel - The Equinox</title>
+Expand
+dm.html
+2 KB
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Equinox - Cyberpunk D&D Shop</title>
+Expand
+index.html
+1 KB
+{
+  "melee_weapons": [
+    {
+      "name": "Eclipse Fang",
+      "type": "Legendary Katana",
+      "damage": "3d8 slashing + 2d6 necrotic",
+Expand
+items.json
+33 KB
+let items = [];
+
+// Function to load and initialize items from items.json
+async function initItems() {
+    try {
+        const response = await fetch('items.json');
+Expand
+script.js
+4 KB
+body {
+    background-color: #0a0a0a;
+    color: #00ffcc;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+Expand
+style.css
+2 KB
+aincient — 9/7/2025 1:58 PM
+? fr wtf
+how do i get it to work 
+So the dm part works now?
+Do i just copy evertything in their?
+Raúl-RBJ7 — 9/7/2025 2:16 PM
+yeah copy each one and replace the code like how i was doing it
+aincient — 9/7/2025 2:16 PM
+ok
+and than what the dm panel works?
+Raúl-RBJ7 — 9/7/2025 2:16 PM
+it's working for me so it should work now for you
+Raúl-RBJ7 — 9/7/2025 2:17 PM
+yes
+only thing is since you're not using the firebase
+it won't update for other users just like for yourself
+aincient — 9/7/2025 2:18 PM
+oK
+Raúl-RBJ7 — 9/7/2025 2:19 PM
+like if i were to go to the website and then press the buy now button, it wouldn't show for you that it was purchased already or that it's restocked
+so like if you want to make it do that later, you gonna have to figure out the firebase thing
+aincient — 9/7/2025 2:19 PM
+oh ok I see
+i thinkit broke on my side?
+Raúl-RBJ7 — 9/7/2025 3:23 PM
+did it?
+aincient — 9/7/2025 3:23 PM
+Yea lol it not working anymore
+Let me retry it
+Raúl-RBJ7 — 9/7/2025 3:25 PM
+alright
+Raúl-RBJ7 — 9/7/2025 3:41 PM
+﻿
+Raúl-RBJ7
+raulb7
+ 
 body {
     background-color: #0a0a0a;
     color: #00ffcc;
