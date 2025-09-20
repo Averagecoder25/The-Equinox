@@ -21,7 +21,13 @@
             alert("Access Denied");
             window.location.href = "index.html";
         } else {
+            initItems().then(() => {
             loadDMItems();
+        }).catch(error => {
+            console.error('Error initializing items:', error);
+            alert('Failed to initialize DM panel. Please try again later.');
+        });
+
         }
     </script>
 </body>
